@@ -1,0 +1,39 @@
+[08-Feb-2023 16:53:39 Africa/Nairobi] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php:47
+Stack trace:
+#0 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php(47): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'xcrud', '3307', NULL)
+#1 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php(36): Xcrud_db->__construct('root', 'root', 'xcrud', 'localhost:3307', 'utf8')
+#2 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(4895): Xcrud_db::get_instance(false)
+#3 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(1992): Xcrud->_get_table_info()
+#4 /home2/technz1m/public_html/_LARAVEL/xcrud/example.php(36): Xcrud->render()
+#5 {main}
+  thrown in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php on line 47
+[08-Feb-2023 16:54:45 Africa/Nairobi] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'technz1m_larala.payments' doesn't exist in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php:61
+Stack trace:
+#0 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php(61): mysqli->query('SHOW COLUMNS FR...', 1)
+#1 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(4896): Xcrud_db->query('SHOW COLUMNS FR...')
+#2 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(1992): Xcrud->_get_table_info()
+#3 /home2/technz1m/public_html/_LARAVEL/xcrud/example.php(36): Xcrud->render()
+#4 {main}
+  thrown in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php on line 61
+[08-Feb-2023 17:02:00 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to undefined method Xcrud::column() in /home2/technz1m/public_html/_LARAVEL/xcrud/example.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/technz1m/public_html/_LARAVEL/xcrud/example.php on line 17
+[08-Feb-2023 17:02:56 Africa/Nairobi] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'countrys.id' in 'field list' in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php:61
+Stack trace:
+#0 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php(61): mysqli->query('SELECT `country...', 1)
+#1 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(3977): Xcrud_db->query('SELECT `country...')
+#2 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(2093): Xcrud->_list()
+#3 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(1993): Xcrud->_run_task()
+#4 /home2/technz1m/public_html/_LARAVEL/xcrud/example.php(19): Xcrud->render()
+#5 {main}
+  thrown in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php on line 61
+[08-Feb-2023 17:29:30 Africa/Nairobi] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'countrys.id' in 'field list' in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php:61
+Stack trace:
+#0 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php(61): mysqli->query('SELECT `country...', 1)
+#1 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(3977): Xcrud_db->query('SELECT `country...')
+#2 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(2093): Xcrud->_list()
+#3 /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud.php(1993): Xcrud->_run_task()
+#4 /home2/technz1m/public_html/_LARAVEL/xcrud/example.php(19): Xcrud->render()
+#5 {main}
+  thrown in /home2/technz1m/public_html/_LARAVEL/xcrud/xcrud/xcrud_db.php on line 61
